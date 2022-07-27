@@ -1,14 +1,12 @@
 // Creo lista spesa
 const listaSpesa = ["Patate x2", "Riso", "Latte", "Acqua x6", "Hamburger", "Gelato", "Pomodoro"]
 // Salvo posizione 
-let listaPosition 
+let listaPosition = listaSpesa[0]
 // Salvo lunghezza array
 const spesaLenght = listaSpesa.length
-console.log(spesaLenght)
 
 // Selezione elemento html
 const ul = document.querySelector('.lista-spesa')
-console.log(ul)
 
 // Creo ciclo FOR
 for (i = 0; i < spesaLenght; i++) {
@@ -23,3 +21,4 @@ for (i = 0; i < spesaLenght; i++) {
     // Concateno li all'interno di ul
     ul.innerHTML += li
 }
+
