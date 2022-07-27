@@ -11,16 +11,15 @@ const ul = document.querySelector('.lista-spesa')
 console.log(ul)
 
 // Creo ciclo FOR
-for (i = 0; i <= spesaLenght + 1; i++) {
-
+for (i = 0; i < spesaLenght; i++) {
+    // Indico che i deve essere l'indece all'interno dell'array
     listaPosition = listaSpesa[i]
-
-    let li = `
+    // Creo li con all'interno elemento array selezionato
+    let li =`
     <li>
         ${listaPosition}            
-    </li>`
-
-    ul.append(li)
-    console.log(li)
-    console.log(ul)
+    </li>
+    `
+    // Concateno li all'interno di ul
+    ul.innerHTML += li
 }
